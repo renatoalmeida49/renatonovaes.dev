@@ -1,24 +1,38 @@
-# renatonovaes
+# Renato Novaes  
+  
+Meu portfólio.  
+  
+## Sumário
 
-## Project setup
+- [Visão Geral](#visao-geral)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Executar o projeto](#executar-o-projeto)
+- [TODO](#todo)
+  
+## Visão Geral    
+  
+### Screenshots
+  
+![]()  
+  
+### Links
+  
+- Site online: [Netlify]()
+
+## Executar o projeto  
+  
+Você precisa do NodeJS e NPM instalado.  
+Após o clone do repositório, no terminal execute:  
+
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
+```  
+  
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## TODO
+  
+:white_square_small: Dark Mode
