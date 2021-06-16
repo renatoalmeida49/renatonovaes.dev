@@ -35,4 +35,4 @@ npm run serve
 
 ## TODO
   
-:white_square_small: Dark Mode
+:white_medium_square: Dark Mode
