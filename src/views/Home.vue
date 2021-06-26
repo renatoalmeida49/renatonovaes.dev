@@ -6,7 +6,7 @@
     <div class="line"></div>
   </div>
 
-  <nav class="nav-menu" :style="styleMenu">
+  <nav class="nav-menu" :class="styleMenu">
     <ul>
       <li><a href="#start">Início</a></li>
       <li><a href="#sobre">Sobre</a></li>
@@ -17,7 +17,9 @@
   </nav>
 
   <section id="start">
-    <img src="@/assets/img/logo.svg" alt="Minha logo"/>
+    <div class="backdrop">
+      <img src="@/assets/img/logo.svg" alt="Minha logo"/>
+    </div>
   </section>
 
   <section id="sobre">
@@ -94,7 +96,7 @@ export default {
   computed: {
     styleMenu() {
       return {
-        display: this.showMenu ? 'flex' : 'none'
+        'ativo': this.showMenu
       }
     }
   }
