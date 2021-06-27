@@ -8,11 +8,11 @@
 
   <nav class="nav-menu" :class="styleMenu">
     <ul>
-      <li><a href="#start">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#curriculo">Curriculo</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#start">Serviço</a></li>
+      <li><a href="#start"><i class="fas fa-house-user"></i>Início</a></li>
+      <li><a href="#sobre"><i class="fas fa-address-card"></i>Sobre</a></li>
+      <li><a href="#curriculo"><i class="fas fa-file"></i>Curriculo</a></li>
+      <li><a href="#portfolio"><i class="fas fa-clipboard"></i>Portfolio</a></li>
+      <li><a href="#start"><i class="fas fa-server"></i>Serviço</a></li>
     </ul>
   </nav>
 
@@ -23,49 +23,51 @@
   </section>
 
   <section id="sobre">
-    <h1>Sobre</h1>
+    <Title>Sobre</Title>
 
     <p>Estou na área de TI desde 2011. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, alias quis tempora laborum id maxime rem voluptatem sit praesentium vel porro eum quaerat, nobis ipsam neque facere nisi animi nulla.</p>
+
+    <img src="@/assets/img/me_2.jpg" />
 
     <h2>Desenvolvedor Frontend</h2>
 
     <ul>
-      <li><span>Nascimento:</span>25 Oct 1996</li>
-      <li><span>Website:</span>Esse mesmo</li>
-      <li><span>Phone:</span>+55 82 9 9690 1034</li>
-      <li><span>Cidade:</span>Maceió-AL, Brasil</li>
-      <li><span>Educação:</span>Superior</li>
-      <li><span>Freelance:</span>Disponível</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Nascimento:</span> 25 Oct 1996</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Website:</span> Esse mesmo</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Phone:</span> +55 82 9 9690 1034</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Cidade:</span> Maceió-AL, Brasil</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Educação:</span> Superior</li>
+      <li><i class="fas fa-caret-right fa-lg"></i><span>Freelance:</span> Disponível</li>
     </ul>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus velit dolore, asperiores sint aspernatur officiis ipsam est labore corporis dolorem, iure assumenda ratione. Quia nesciunt nam tempora provident quae.</p>
   </section>
 
   <section id="fatos">
-    <h1>Fatos</h1>
+    <Title>Fatos</Title>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure nostrum aut magnam recusandae commodi deleniti! Distinctio temporibus nobis animi adipisci explicabo, tempore facilis quae aliquam! Sit eaque nemo asperiores.</p>
 
     <div class="card">
-      <img src="" alt="Clientes felizes">
+      <i class="fas fa-smile-beam fa-6x"></i>
       <span>232</span>
       <p>Clientes felizes</p>
     </div>
 
     <div class="card">
-      <img src="" alt="Clientes felizes">
+      <i class="fas fa-project-diagram fa-6x"></i>
       <span>232</span>
       <p>Projetos</p>
     </div>
 
     <div class="card">
-      <img src="" alt="Clientes felizes">
+      <i class="fas fa-headset fa-6x"></i>
       <span>232</span>
       <p>Horas de suporte</p>
     </div>
 
     <div class="card">
-      <img src="" alt="Clientes felizes">
+      <i class="fas fa-users fa-6x"></i>
       <span>232</span>
       <p>Colegas</p>
     </div>
@@ -76,11 +78,12 @@
 </template>
 
 <script>
+import Title from "@/components/Title.vue"
 
 export default {
   name: 'Home',
   components: {
-    
+    Title
   },
   data() {
     return {
