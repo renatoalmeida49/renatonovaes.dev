@@ -16,18 +16,22 @@
     </ul>
   </nav>
 
-  <section id="start">
-    <div class="backdrop">
-      <img src="@/assets/img/logo.svg" alt="Minha logo"/>
-    </div>
-  </section>
+  <Hello />
 
 </div>
 </template>
 
+
 <script>
+
+import Hello from './components/hello.vue'
+
 export default {
   name: 'Home',
+
+  components: {
+    Hello
+  },
 
   data() {
     return {
@@ -50,6 +54,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import './style.scss';
 </style>
