@@ -1,6 +1,6 @@
 <template>
   
-  <section class="hello">
+  <section class="hello d-flex flex-column justify-content-center">
     <div class="hello__container">
       <h1 class="hello__title">Renato Novaes</h1>
     </div>
