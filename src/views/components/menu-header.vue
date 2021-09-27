@@ -40,7 +40,7 @@ export default {
           label: "Início",
         },
         {
-          link: "/about",
+          link: "#about",
           icon: "user",
           label: "Sobre",
         },

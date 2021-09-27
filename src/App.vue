@@ -1,7 +1,6 @@
 <template>
 
   <div id="app">
-    <MenuHeader />
     <router-view/>
   </div>
 
@@ -10,14 +9,8 @@
 
 <script>
 
-import MenuHeader from './components/menu-header.vue'
-
 export default {
   name: "App",
-
-  components: {
-    MenuHeader
-  }
 }
 
 </script>

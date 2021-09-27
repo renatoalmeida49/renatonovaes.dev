@@ -1,8 +1,10 @@
 <template>
 
   <div class="home">
-    
+
+    <MenuHeader />
     <Hello />
+    <About />
 
   </div>
 
@@ -11,13 +13,17 @@
 
 <script>
 
+import MenuHeader from './components/menu-header.vue'
 import Hello from './components/hello.vue'
+import About from './components/about.vue'
 
 export default {
   name: 'Home',
 
   components: {
-    Hello
+    MenuHeader,
+    Hello,
+    About
   },
 }
 </script>
