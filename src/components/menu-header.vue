@@ -10,12 +10,12 @@
       <nav class="nav-menu">
         <ul>
           <template v-for="(menu, index) in menuItens">
-            <li :key="index">
-              <a :href="menu.link">
-                <box-icon :name="menu.icon" color="#45505b" />
+            <router-link :to="menu.link" :key="index">
+              <li>
+                <box-icon :name="menu.icon" class="icon" />
                 <span>{{ menu.label }}</span>
-              </a>
-            </li>
+              </li>
+            </router-link>
           </template>
         </ul>
       </nav>
@@ -35,12 +35,12 @@ export default {
       showMenu: false,
       menuItens: [
         {
-          link: "#start",
+          link: "/",
           icon: "home",
           label: "Início",
         },
         {
-          link: "#sobre",
+          link: "/about",
           icon: "user",
           label: "Sobre",
         },
@@ -133,7 +133,7 @@ export default {
       padding: 0;
       margin: 0;
 
-      li {
+      a {
         position: relative;
         white-space: nowrap;
         background: #f2f3f5;
@@ -146,10 +146,23 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+        transition: all .5s;
 
-        a {
-          text-decoration: none;
+        &.router-link-exact-active {
+          background-color: #0563bb;
+
+          .icon {
+            fill: #fff;
+          }
+        }
+
+        li {
           color: #45505b;
+
+          .icon {
+            fill: #45505b;
+          }
 
           span {
             display: none;
@@ -161,13 +174,19 @@ export default {
   @media (max-width: 992px) {
     .nav-menu {
       ul {
-        li {
+        a {
           width: 100%;
           border-radius: 8px;
           padding: 10px;
           justify-content: flex-start;
 
-          a {
+          &.router-link-exact-active {
+            li {
+              color: white;
+            }
+          }
+
+          li {
             display: flex;
             align-items: center;
             gap: 22px;
