@@ -4,6 +4,17 @@
     <div class="hello__container">
       <h1 class="hello__title">Renato Novaes</h1>
 
+      <vue-typed-js
+        class="hello__type-animation"
+        :strings="typeNames"
+        :loop="true"
+        :typeSpeed="100"
+        :backDelay="2000"
+        :backSpeed="25"
+      >
+        <h1>I'm <span class="typing"></span></h1>
+      </vue-typed-js>
+
       <div class="hello__social">
         <template v-for="(social, index) in socialLinks">
           <a :key="index" :href="social.link" target="blank">
@@ -24,6 +35,7 @@ export default {
 
   data() {
     return {
+      typeNames: ['Web Developer', 'Freelancer'],
       socialLinks: [
         {
           link: "https://www.facebook.com/renatonovaes49",
@@ -85,6 +97,15 @@ export default {
     color: #45505b;
   }
 
+  &__type-animation {
+    padding: 8px 0;
+    font-family: 'Roboto Mono', monospace;
+
+    .typing {
+      color: #0563bb;
+    }
+  }
+
   &__social {
     padding: 20px 0;
 
@@ -102,6 +123,10 @@ export default {
     &__title {
       font-size: 32px;
       line-height: 36px;
+    }
+
+    &__type-animation {
+      justify-content: center;
     }
   }
 }

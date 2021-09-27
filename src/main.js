@@ -7,6 +7,9 @@ import 'jquery/src/jquery.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 import 'boxicons'
+import VueTypedJs from 'vue-typed-js'
+ 
+Vue.use(VueTypedJs)
 
 Vue.config.productionTip = false
 
