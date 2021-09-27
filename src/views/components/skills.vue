@@ -24,8 +24,8 @@
         <div :key="index" class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
           <progress-circle
             :completed-steps="software.value"
-            total-steps="100"
-            diameter="200"
+            :total-steps="100"
+            :diameter="200"
             circle-color="#f4f5f6"
             start-color="#0563bb"
             stop-color="#0563bb"
@@ -58,47 +58,47 @@ export default {
       languageSkills: [
         {
           label: "HTML",
-          value: "90",
+          value: 90,
           icon: ""
         },
         {
           label: "CSS",
-          value: "85",
+          value: 85,
           icon: ""
         },
         {
           label: "JavaScript",
-          value: "70",
+          value: 70,
           icon: ""
         },
         {
           label: "Git",
-          value: "60",
+          value: 60,
           icon: ""
         },
         {
           label: "VueJS",
-          value: "80",
+          value: 80,
           icon: ""
         },
         {
           label: "PHP",
-          value: "40",
+          value: 40,
           icon: ""
         },
       ],
       softwareSkills: [
         {
           label: "VSCode",
-          value: "90"
+          value: 90
         },
         {
           label: "Postman",
-          value: "60"
+          value: 60
         },
         {
           label: "Insomnia",
-          value: "20"
+          value: 20
         },
       ]
     }
