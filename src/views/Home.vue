@@ -5,6 +5,7 @@
     <MenuHeader />
     <Hello />
     <About />
+    <Skills />
 
   </div>
 
@@ -16,6 +17,7 @@
 import MenuHeader from './components/menu-header.vue'
 import Hello from './components/hello.vue'
 import About from './components/about.vue'
+import Skills from './components/skills.vue'
 
 export default {
   name: 'Home',
@@ -23,7 +25,8 @@ export default {
   components: {
     MenuHeader,
     Hello,
-    About
+    About,
+    Skills
   },
 }
 </script>
