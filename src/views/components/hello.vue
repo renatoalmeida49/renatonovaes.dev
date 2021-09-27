@@ -25,6 +25,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  padding-left: 160px;
 
   &::before {
     content: '';
@@ -47,6 +48,13 @@ export default {
     font-weight: 700;
     line-height: 56px;
     color: #45505b;
+  }
+}
+
+@media (max-width: 992px) {
+  .hello {
+    text-align: center;
+    padding-left: 0;
   }
 }
 </style>
