@@ -1,6 +1,15 @@
 <template>
   
   <div class="menu-header">
+    <div class="flag-area">
+      <button class="flag-area__option" @click="setLanguage('ptBR')">
+        <img src="@/assets/flags/brazil.png" width="50" height="50" alt="Brazil flag">
+      </button>
+      <button class="flag-area__option" @click="setLanguage('en')">
+        <img src="@/assets/flags/usa.png" width="50" height="50" alt="Brazil flag">
+      </button>
+    </div>
+
     <button class="mobile-nav-toggle d-xl-none" @click="menuMobile">
       <box-icon size="lg" name="menu" color="#45505b" v-if="!showMenu"/>
       <box-icon size="lg" name="x" color="#45505b" v-else/>
@@ -80,6 +89,9 @@ export default {
   methods: {
     menuMobile() {
       this.showMenu = !this.showMenu
+    },
+    setLanguage(lang) {
+      console.log(lang)
     }
   },
 }
@@ -90,6 +102,26 @@ export default {
 <style lang="scss">
 
 .menu-header {
+  .flag-area {
+    position: fixed;
+    padding: 16px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    &__option {
+      border: none;
+      background: transparent;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 992px) {
+    .flag-area {
+      right: 55px;
+    }
+  }
+
   .mobile-nav-toggle {
     display: none;
   }

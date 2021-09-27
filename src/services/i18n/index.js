@@ -5,8 +5,6 @@ import ptBR from './ptBR'
 
 Vue.use(VueI18n)
 
-console.log('Boo', ptBR)
-
 const messages = {
   ptBR
 }
