@@ -2,11 +2,13 @@ import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 
 import ptBR from './ptBR'
+import en from './en'
 
 Vue.use(VueI18n)
 
 const messages = {
-  ptBR
+  ptBR,
+  en
 }
 
 const locale = localStorage.getItem('locale') || 'ptBR'

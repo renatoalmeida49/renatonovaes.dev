@@ -22,7 +22,7 @@
             <router-link :to="menu.link" :key="index">
               <li>
                 <box-icon :name="menu.icon" class="icon" />
-                <span>{{ menu.label }}</span>
+                <span>{{ $t(menu.label) }}</span>
               </li>
             </router-link>
           </template>
@@ -46,27 +46,27 @@ export default {
         {
           link: "/",
           icon: "home",
-          label: "Início",
+          label: "HEADER.MENU.HOME",
         },
         {
           link: "#about",
           icon: "user",
-          label: "Sobre",
+          label: "HEADER.MENU.ABOUT",
         },
         {
           link: "#curriculo",
           icon: "file-blank",
-          label: "Curriculo",
+          label: "HEADER.MENU.RESUME",
         },
         {
           link: "#portfolio",
           icon: "food-menu",
-          label: "Portfolio",
+          label: "HEADER.MENU.PORTFOLIO",
         },
         {
           link: "#start",
           icon: "server",
-          label: "Serviço",
+          label: "HEADER.MENU.SERVICES",
         },
       ]
     }
@@ -91,7 +91,8 @@ export default {
       this.showMenu = !this.showMenu
     },
     setLanguage(lang) {
-      console.log(lang)
+      localStorage.setItem('locale', lang)
+      window.location.reload()
     }
   },
 }
