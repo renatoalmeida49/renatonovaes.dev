@@ -1,9 +1,9 @@
 <template>
 
   <TheSection id="about">
-    <Title>Sobre</Title>
+    <Title>{{ $t('ABOUT.TITLE') }}</Title>
 
-    <p>Since 2011 working with IT. Programing and hardware are the things I love most in this area. Since 2021 working as a Frontend Developer.</p>
+    <p>{{ $t('ABOUT.DESCRIPTION') }}</p>
 
     <div class="row">
       <div class="col-lg-4">
@@ -11,34 +11,28 @@
       </div>
 
       <div class="col-lg-8 content">
-        <h3>Frontend Developer.</h3>
+        <h3>{{ $t('ABOUT.DETAILS.ROLE') }}</h3>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
+        <p>{{ $t('ABOUT.DETAILS.DESCRIPTION') }}</p>
         <div class="row">
           <div class="col-lg-6">
             <ul>
-              <li><strong>Birthday:</strong> 25 Oct 1996</li>
-              <li><strong>Website:</strong> www.renatonovaes.dev</li>
-              <li><strong>Phone:</strong> +55 82 9 9690 1034</li>
-              <li><strong>City:</strong> Maceió, BR</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.WEBSITE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.WEBSITE.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.PHONE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.PHONE.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.CITY.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.CITY.VALUE') }}</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <ul>
-              <li><strong>Age:</strong> 24</li>
-              <li><strong>Degree:</strong> Master</li>
-              <li><strong>PhEmailone:</strong> renatoalmeida49@gmail.com</li>
-              <li><strong>Freelance:</strong> Available</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.AGE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.AGE.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.DEGREE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.DEGREE.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.EMAIL.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.EMAIL.VALUE') }}</li>
+              <li><strong>{{ $t('ABOUT.DETAILS.LIST.FREELANCE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.FREELANCE.VALUE') }}</li>
             </ul>
           </div>
         </div>
-        <p>
-          Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-          Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-        </p>
+        <p>{{ $t('ABOUT.CONCLUSION') }}</p>
       </div>
     </div>
   </TheSection>
