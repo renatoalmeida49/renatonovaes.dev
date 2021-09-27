@@ -63,19 +63,25 @@ export default {
     }
   },
 
-  methods: {
-    menuMobile() {
-      this.showMenu = !this.showMenu
-    }
-  },
-
   computed: {
     toggleMenu() {
       return {
         'active': this.showMenu
       }
     }
-  }
+  },
+
+  watch: {
+    $route() {
+      this.showMenu = !this.showMenu
+    }
+  },
+
+  methods: {
+    menuMobile() {
+      this.showMenu = !this.showMenu
+    }
+  },
 }
 
 </script>
@@ -120,7 +126,7 @@ export default {
       width: 100vw;
       background: #fff;
       border-right: 1px solid #e6e9ec;
-      left: -100%;
+      left: -150%;
     }
     #header.active {
       left: 0;
