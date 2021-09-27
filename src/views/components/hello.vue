@@ -12,7 +12,7 @@
         :backDelay="2000"
         :backSpeed="25"
       >
-        <h1>I'm <span class="typing"></span></h1>
+        <h1>{{ $t('HELLO.HI') }} <span class="typing"></span></h1>
       </vue-typed-js>
 
       <div class="hello__social">
