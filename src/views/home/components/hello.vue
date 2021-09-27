@@ -68,7 +68,7 @@ export default {
 <style lang="scss" scoped>
 .hello {
   height: 100vh;
-  background-image: url('../../assets/img/me.jpg');
+  background-image: url('../../../assets/img/me.jpg');
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
