@@ -1,9 +1,9 @@
 <template>
   
   <TheSection id="skills">
-    <Title>Habilidades</Title>
+    <Title>{{ $t('SKILLS.TITLE') }}</Title>
 
-    <h1>Linguagens</h1>
+    <h1>{{ $t('SKILLS.LANGUAGES') }}</h1>
     <div class="row">
       <template v-for="(lang, index) in languageSkills">
         <div :key="index" class="col-lg-6 py-3">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="row">
-      <h1>Softwares</h1>
+      <h1>{{ $t('SKILLS.SOFTWARES') }}</h1>
 
       <template v-for="(software, index) in softwareSkills">
         <div :key="index" class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">

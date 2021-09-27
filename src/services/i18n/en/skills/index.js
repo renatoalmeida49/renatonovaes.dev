@@ -1,3 +1,7 @@
 export default {
-  SKILLS: {}
+  SKILLS: {
+    TITLE: "Skills",
+    LANGUAGES: "Languages",
+    SOFTWARES: "Softwares"
+  }
 }
