@@ -1,10 +1,30 @@
 <template>
+
   <div id="app">
+    <MenuHeader />
     <router-view/>
   </div>
+
 </template>
 
+
+<script>
+
+import MenuHeader from './components/menu-header.vue'
+
+export default {
+  name: "App",
+
+  components: {
+    MenuHeader
+  }
+}
+
+</script>
+
+
 <style lang="scss">
+
 * {
   padding: 0;
   margin: 0;
@@ -34,4 +54,5 @@ html {
     }
   }
 }
+
 </style>
