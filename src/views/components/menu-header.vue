@@ -2,18 +2,21 @@
   
   <div class="menu-header">
     <button class="mobile-nav-toggle d-xl-none" @click="menuMobile">
-      <box-icon name="menu" v-if="!showMenu"/>
-      <box-icon name="x" v-else/>
+      <box-icon size="lg" name="menu" color="#45505b" v-if="!showMenu"/>
+      <box-icon size="lg" name="x" color="#45505b" v-else/>
     </button>
 
     <header id="header" :class="toggleMenu" class="d-flex flex-column justify-content-center">
       <nav class="nav-menu">
         <ul>
-          <li><a href="#start"><box-icon name="home" />Início</a></li>
-          <li><a href="#sobre"><box-icon name="user" />Sobre</a></li>
-          <li><a href="#curriculo"><box-icon name="file-blank" />Curriculo</a></li>
-          <li><a href="#portfolio"><box-icon name="food-menu" />Portfolio</a></li>
-          <li><a href="#start"><box-icon name="server" />Serviço</a></li>
+          <template v-for="(menu, index) in menuItens">
+            <li :key="index">
+              <a :href="menu.link">
+                <box-icon :name="menu.icon" color="#45505b" />
+                <span>{{ menu.label }}</span>
+              </a>
+            </li>
+          </template>
         </ul>
       </nav>
     </header>
@@ -30,6 +33,33 @@ export default {
   data() {
     return {
       showMenu: false,
+      menuItens: [
+        {
+          link: "#start",
+          icon: "home",
+          label: "Início",
+        },
+        {
+          link: "#sobre",
+          icon: "user",
+          label: "Sobre",
+        },
+        {
+          link: "#curriculo",
+          icon: "file-blank",
+          label: "Curriculo",
+        },
+        {
+          link: "#portfolio",
+          icon: "food-menu",
+          label: "Portfolio",
+        },
+        {
+          link: "#start",
+          icon: "server",
+          label: "Serviço",
+        },
+      ]
     }
   },
 
@@ -85,7 +115,6 @@ export default {
     padding: 15px;
     overflow-y: auto;
   }
-
   @media (max-width: 992px) {
     #header {
       width: 100vw;
@@ -95,6 +124,60 @@ export default {
     }
     #header.active {
       left: 0;
+    }
+  }
+
+  .nav-menu {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        white-space: nowrap;
+        background: #f2f3f5;
+        margin: 8px 0;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: #45505b;
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .nav-menu {
+      ul {
+        li {
+          width: 100%;
+          border-radius: 8px;
+          padding: 10px;
+          justify-content: flex-start;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
     }
   }
 }
