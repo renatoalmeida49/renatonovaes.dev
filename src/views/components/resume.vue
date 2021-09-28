@@ -1,7 +1,7 @@
 <template>
   
   <TheSection id="resume">
-    <Title>Resume</Title>
+    <Title>{{ $t('RESUME.TITLE') }}</Title>
 
     <div class="row">
       <div class="col-lg-6">

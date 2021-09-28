@@ -1,3 +1,11 @@
 export default {
-  RESUME: {}
+  RESUME: {
+    TITLE: "Currículo",
+    EDUCATION: {
+      TITLE: "Educação"
+    },
+    EXPERIENCES: {
+      TITLE: "Experiências profissionais"
+    }
+  }
 }
