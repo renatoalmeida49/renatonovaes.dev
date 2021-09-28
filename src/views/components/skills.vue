@@ -3,12 +3,15 @@
   <TheSection id="skills">
     <Title>{{ $t('SKILLS.TITLE') }}</Title>
 
-    <h1>{{ $t('SKILLS.LANGUAGES') }}</h1>
+    <!-- <h1>{{ $t('SKILLS.LANGUAGES') }}</h1> -->
     <div class="row">
       <template v-for="(lang, index) in languageSkills">
         <div :key="index" class="col-lg-6 py-3">
           <div class="progress">
-            <span class="skill">{{ lang.label }} <i class="val">{{ lang.value }}%</i></span>
+            <div class="progress-header">
+              <box-icon :name="lang.icon" class="icon" type="logo" color="#45505b" />
+              <span class="skill">{{ lang.label }} <i class="val">{{ lang.value }}%</i></span>
+            </div>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" :style="getPercentual(lang.value)" :aria-valuenow="lang.value" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -17,7 +20,7 @@
       </template>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <h1>{{ $t('SKILLS.SOFTWARES') }}</h1>
 
       <template v-for="(software, index) in softwareSkills">
@@ -35,7 +38,7 @@
           </progress-circle>
         </div>
       </template>
-    </div>
+    </div> -->
 
   </TheSection>
 
@@ -44,13 +47,13 @@
 
 <script>
 
-import { ProgressCircle } from 'vue-progress-circle'
+// import { ProgressCircle } from 'vue-progress-circle'
 
 export default {
   name: "Skills",
 
   components: {
-    ProgressCircle
+    // ProgressCircle
   },
 
   data() {
@@ -59,32 +62,32 @@ export default {
         {
           label: "HTML",
           value: 90,
-          icon: ""
+          icon: "html5"
         },
         {
           label: "CSS",
           value: 85,
-          icon: ""
+          icon: "css3"
         },
         {
           label: "JavaScript",
           value: 70,
-          icon: ""
+          icon: "javascript"
         },
         {
           label: "Git",
           value: 60,
-          icon: ""
+          icon: "git"
         },
         {
           label: "VueJS",
           value: 80,
-          icon: ""
+          icon: "vuejs"
         },
         {
           label: "PHP",
           value: 40,
-          icon: ""
+          icon: "php"
         },
       ],
       softwareSkills: [
@@ -134,17 +137,27 @@ export default {
       }
     }
 
-    .skill {
-      padding: 10px 0;
-      margin: 0 0 6px 0;
-      text-transform: uppercase;
-      display: block;
-      font-weight: 600;
-      font-family: "Poppins", sans-serif;
-      color: #45505b;
+    .progress-header {
+      display: flex;
+      align-items: center;
 
-      .val {
-        float: right;
+      .icon {
+        float: left;
+        margin-right: 5px;
+      }
+
+      .skill {
+        padding: 10px 0;
+        flex: 1;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #45505b;
+
+        .val {
+          float: right;
+        }
       }
     }
 
