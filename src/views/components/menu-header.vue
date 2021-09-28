@@ -63,16 +63,16 @@ export default {
           icon: "file-blank",
           label: "HEADER.MENU.RESUME",
         },
-        {
-          link: "#portfolio",
-          icon: "food-menu",
-          label: "HEADER.MENU.PORTFOLIO",
-        },
-        {
-          link: "#start",
-          icon: "server",
-          label: "HEADER.MENU.SERVICES",
-        },
+        // {
+        //   link: "#portfolio",
+        //   icon: "food-menu",
+        //   label: "HEADER.MENU.PORTFOLIO",
+        // },
+        // {
+        //   link: "#start",
+        //   icon: "server",
+        //   label: "HEADER.MENU.SERVICES",
+        // },
       ]
     }
   },

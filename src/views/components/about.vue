@@ -54,6 +54,10 @@ export default {
 #about {
   text-align: center;
 
+  img {
+    max-width: 300px;
+  }
+
   .content {
     text-align: left;
     padding: 0 15px;
