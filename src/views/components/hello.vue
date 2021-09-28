@@ -1,7 +1,7 @@
 <template>
   
   <section class="hello d-flex flex-column justify-content-center">
-    <div class="hello__container">
+    <div class="hello__container animate__animated animate__slideInDown">
       <h1 class="hello__title">Renato Novaes</h1>
 
       <vue-typed-js
