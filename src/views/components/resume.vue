@@ -5,44 +5,31 @@
 
     <div class="row">
       <div class="col-lg-6">
-        <h3 class="resume-title">Education</h3>
-        <div class="resume-item">
-          <h4>IFAL - Federal Institute Of Alagoas</h4>
-          <h5>2011 - 2015</h5>
-          <p><em>Maceió, AL</em></p>
-          <p>Computer technical course integrated with high school.</p>
-        </div>
-        <div class="resume-item">
-          <h4>UNIT - Tiradentes University</h4>
-          <h5>2017 - 2019</h5>
-          <p><em>Maceió, AL</em></p>
-          <p>Technologist in Analysis and Systems Development</p>
-        </div>
+        <h3 class="resume-title">{{ $t('RESUME.EDUCATION.TITLE') }}</h3>
+
+        <template v-for="(item, index) in education">
+          <div :key="index" class="resume-item">
+            <h4>{{ $t(item.location) }}</h4>
+            <h5>{{ $t(item.period) }}</h5>
+            <p><em>{{ $t(item.city) }}</em></p>
+            <p>{{ $t(item.description) }}</p>
+          </div>
+        </template>
       </div>
       <div class="col-lg-6">
-        <h3 class="resume-title">Professional Experience</h3>
-        <div class="resume-item">
-          <h4>Junior Frontend Developer</h4>
-          <h5>2021 - Present</h5>
-          <p><em>Experion, New York, NY </em></p>
-          <ul>
-            <li>Working with a large team developing a big project for Locaweb company</li>
-            <li>The main framework was VueJS to work with Javascript. For CSS, Bootstrap in the most part, but still using Vanilla CSS.</li>
-            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h4>Trainee Frontend Developer</h4>
-          <h5>2021 - Present</h5>
-          <p><em>Stepping Stone Advertising, New York, NY</em></p>
-          <ul>
-            <li>Developed of a educational tool.</li>
-            <li>A real challenge, working with a Mid Developer.</li>
-            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-          </ul>
-        </div>
+        <h3 class="resume-title">{{ $t('RESUME.EXPERIENCES.TITLE') }}</h3>
+
+        <template v-for="(item, index) in experience">
+          <div :key="index" class="resume-item">
+            <h4>{{ $t(item.job) }}</h4>
+            <h5>{{ $t(item.period) }}</h5>
+            <p><em>{{ $t(item.location) }}</em></p>
+            <ul>
+              <li>{{ $t(item.details.team) }}</li>
+              <li>{{ $t(item.details.tools) }}</li>
+            </ul>
+          </div>
+        </template>
       </div>
     </div>
   </TheSection>
@@ -53,7 +40,46 @@
 <script>
 
 export default {
-  name: "Resume"
+  name: "Resume",
+
+  data() {
+    return {
+      education: [
+        {
+          location: "RESUME.EDUCATION.UNIT.LOCATION",
+          period: "RESUME.EDUCATION.UNIT.PERIOD",
+          city: "RESUME.EDUCATION.UNIT.CITY",
+          description: "RESUME.EDUCATION.UNIT.DESCRIPTION"
+        },
+        {
+          location: "RESUME.EDUCATION.IFAL.LOCATION",
+          period: "RESUME.EDUCATION.IFAL.PERIOD",
+          city: "RESUME.EDUCATION.IFAL.CITY",
+          description: "RESUME.EDUCATION.IFAL.DESCRIPTION"
+        },
+      ],
+      experience: [
+        {
+          job: "RESUME.EXPERIENCES.JUNIOR_DEVELOPER.JOB",
+          period: "RESUME.EXPERIENCES.JUNIOR_DEVELOPER.PERIOD",
+          location: "RESUME.EXPERIENCES.JUNIOR_DEVELOPER.LOCATION",
+          details: {
+            team: "RESUME.EXPERIENCES.JUNIOR_DEVELOPER.DETAILS.TEAM",
+            tools: "RESUME.EXPERIENCES.JUNIOR_DEVELOPER.DETAILS.TOOLS"
+          }
+        },
+        {
+          job: "RESUME.EXPERIENCES.TRAINEE_DEVELOPER.JOB",
+          period: "RESUME.EXPERIENCES.TRAINEE_DEVELOPER.PERIOD",
+          location: "RESUME.EXPERIENCES.TRAINEE_DEVELOPER.LOCATION",
+          details: {
+            team: "RESUME.EXPERIENCES.TRAINEE_DEVELOPER.DETAILS.TEAM",
+            tools: "RESUME.EXPERIENCES.TRAINEE_DEVELOPER.DETAILS.TOOLS"
+          }
+        }
+      ]
+    }
+  }
 }
 
 </script>
