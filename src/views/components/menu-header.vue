@@ -54,7 +54,12 @@ export default {
           label: "HEADER.MENU.ABOUT",
         },
         {
-          link: "#curriculo",
+          link: "#skills",
+          icon: "vial",
+          label: "HEADER.MENU.SKILLS",
+        },
+        {
+          link: "#resume",
           icon: "file-blank",
           label: "HEADER.MENU.RESUME",
         },
