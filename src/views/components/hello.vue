@@ -15,13 +15,7 @@
         <h1>{{ $t('HELLO.HI') }} <span class="typing"></span></h1>
       </vue-typed-js>
 
-      <div class="hello__social">
-        <template v-for="(social, index) in socialLinks">
-          <a :key="index" :href="social.link" target="blank">
-            <box-icon :name="social.icon" type="logo" color="#45505b" />
-          </a>
-        </template>
-      </div>
+      <SocialMedia />
     </div>
   </section>
 
@@ -36,28 +30,6 @@ export default {
   data() {
     return {
       typeNames: ['Web Developer', 'Freelancer'],
-      socialLinks: [
-        {
-          link: "https://www.facebook.com/renatonovaes49",
-          icon: "facebook",
-          label: "Facebook"
-        },
-        {
-          link: "https://github.com/renatoalmeida49",
-          icon: "github",
-          label: "Github"
-        },
-        {
-          link: "https://www.linkedin.com/in/renatonovaes49",
-          icon: "linkedin",
-          label: "Linkedin"
-        },
-        {
-          link: "https://www.instagram.com/novaes_r",
-          icon: "instagram",
-          label: "Instagram"
-        },
-      ]
     }
   }
 }
@@ -103,14 +75,6 @@ export default {
 
     .typing {
       color: #0563bb;
-    }
-  }
-
-  &__social {
-    padding: 20px 0;
-
-    a {
-      margin-right: 20px;
     }
   }
 }

@@ -7,6 +7,7 @@
     <About />
     <Skills />
     <Resume />
+    <TheFooter />
 
   </div>
 
@@ -20,6 +21,7 @@ import Hello from './components/hello.vue'
 import About from './components/about.vue'
 import Skills from './components/skills.vue'
 import Resume from './components/resume.vue'
+import TheFooter from './components/the-footer.vue'
 
 export default {
   name: 'Home',
@@ -29,7 +31,8 @@ export default {
     Hello,
     About,
     Skills,
-    Resume
+    Resume,
+    TheFooter
   },
 }
 </script>
