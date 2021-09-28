@@ -4,7 +4,7 @@ export default {
     DESCRIPTION: "Since 2011 working with IT. Programing and hardware are the things I love most in this area. Since 2021 working as a Frontend Developer.",
     DETAILS: {
       ROLE: "Frontend Developer",
-      DESCRIPTION: "(Description in english)",
+      DESCRIPTION: "Main focus in developer a good experience and interface for all the users of the website.",
       LIST: {
         BIRTHDAY: {
           LABEL: 'Birthday',
@@ -40,6 +40,6 @@ export default {
         },
       },
     },
-    CONCLUSION: "Conclusion text"
+    CONCLUSION: "Always studying and searching knowledge."
   }
 }

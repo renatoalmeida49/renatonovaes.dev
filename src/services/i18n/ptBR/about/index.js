@@ -4,7 +4,7 @@ export default {
     DESCRIPTION: "Desde 2011 trabalhando com TI. Programação e hardware são as coisas que eu amo mais nessa área. Desde 2021 trabalhando como Desenvolvedor Frontend.",
     DETAILS: {
       ROLE: "Desenvolvedor Frontend",
-      DESCRIPTION: "Descrição em português",
+      DESCRIPTION: "Foco principal em desenvolver uma boa experiência e interface para todos os usuários do site.",
       LIST: {
         BIRTHDAY: {
           LABEL: 'Nascimento',
@@ -40,6 +40,6 @@ export default {
         },
       },
     },
-    CONCLUSION: "Texto conclusão"
+    CONCLUSION: "Sempre estudando e buscando conhecimento."
   }
 }

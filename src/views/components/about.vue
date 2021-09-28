@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-lg-6">
             <ul>
-              <li><strong>{{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.VALUE') }}</li>
+              <!-- <li><strong>{{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.BIRTHDAY.VALUE') }}</li> -->
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.WEBSITE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.WEBSITE.VALUE') }}</li>
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.PHONE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.PHONE.VALUE') }}</li>
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.CITY.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.CITY.VALUE') }}</li>
@@ -25,7 +25,7 @@
           </div>
           <div class="col-lg-6">
             <ul>
-              <li><strong>{{ $t('ABOUT.DETAILS.LIST.AGE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.AGE.VALUE') }}</li>
+              <!-- <li><strong>{{ $t('ABOUT.DETAILS.LIST.AGE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.AGE.VALUE') }}</li> -->
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.DEGREE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.DEGREE.VALUE') }}</li>
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.EMAIL.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.EMAIL.VALUE') }}</li>
               <li><strong>{{ $t('ABOUT.DETAILS.LIST.FREELANCE.LABEL') }}:</strong> {{ $t('ABOUT.DETAILS.LIST.FREELANCE.VALUE') }}</li>
