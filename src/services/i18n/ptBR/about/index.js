@@ -28,7 +28,7 @@ export default {
         },
         DEGREE: {
           LABEL: 'Escolaridade',
-          VALUE: 'Technólogo'
+          VALUE: 'Tecnólogo'
         },
         EMAIL: {
           LABEL: 'E-mail',

@@ -1,8 +1,8 @@
 # Renato Novaes  
   
-Meu portfólio.  
+Meu site pessoal.  
   
-## Sumário
+## :clipboard: Sumário
 
 - [Visão Geral](#visao-geral)
   - [Screenshot](#screenshot)
@@ -10,17 +10,17 @@ Meu portfólio.
 - [Executar o projeto](#executar-o-projeto)
 - [TODO](#todo)
   
-## Visão Geral    
+## :telescope: Visão Geral    
   
 ### Screenshots
   
-![]()  
+![](./src/assets/screenshots/desktop.png)  
   
 ### Links
   
-- Site online: [Netlify]()
+- Site [online](www.renatonovaes.dev)
 
-## Executar o projeto  
+## :arrow_forward: Executar o projeto  
   
 Você precisa do NodeJS e NPM instalado.  
 Após o clone do repositório, no terminal execute:  
